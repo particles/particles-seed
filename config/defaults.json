@@ -1,0 +1,31 @@
+{
+  "main": "app.js",
+  "generatedDir": "${appRoot}/generated",
+  "dataDir": "${appRoot}/data",
+  "assets": {
+    "assetsDir": "${generatedDir}/assets",
+    "viewsDir": "${generatedDir}/views",
+    "publicUrlRoot": "/public"
+  },
+  "particles": {
+    "app": {
+      "particles": ["${appRoot}/app"]
+    }
+  },
+  
+  "logger": {
+    "root": {
+      "level": "info",
+      "streams": [
+        {
+          "level": "debug",
+          "stream": "process.stdout",
+          "streamOptions": {
+            "mode": "short", "prettyPrint": true
+          }
+        }
+      ]
+    }
+  },
+  "next": "custom.json"
+}
