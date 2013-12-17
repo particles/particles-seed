@@ -7,12 +7,12 @@
     "viewsDir": "${generatedDir}/views",
     "publicUrlRoot": "/public"
   },
-  "particles": {
-    "app": {
+  "containers": {
+    "default": {
       "particles": ["${appRoot}/app"]
     }
   },
-  
+
   "logger": {
     "root": {
       "level": "info",
