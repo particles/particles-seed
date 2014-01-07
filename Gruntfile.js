@@ -4,9 +4,9 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     particles: {
-      build: {
+      install: {
         options: {
-          runServices: ['svc|sequence!grunt/configure_grunt']
+          runServices: ['svc|sequence!install/install']
         }
       }
     }
@@ -18,11 +18,11 @@ module.exports = function(grunt) {
   }).forEach(grunt.loadNpmTasks);
 
 
-  grunt.registerTask('update', ['particles:build', 'particles-update']);
-  grunt.registerTask('build', ['particles:build', 'particles-build']);
-  grunt.registerTask('build-and-watch', ['particles:build', 'particles-build-and-watch']);
+  grunt.registerTask('build', ['particles-build']);
+  grunt.registerTask('rebuild', ['particles-rebuild']);
+  grunt.registerTask('watch-assets', ['particles-watch']);
   grunt.registerTask('install', ['particles:install']);
-  grunt.registerTask('dev', ['particles:build', 'particles-develop']);
+  grunt.registerTask('dev', ['particles-develop']);
 
-  grunt.registerTask('default', ['build']);
+  grunt.registerTask('default', ['rebuild']); 
 };
