@@ -24,6 +24,7 @@
     "grunt-cli": "~0.1.11",
 
     "particles": "~0.2.0",
-    "grunt-particles-assetmanager": "~0.2.0"
+    "grunt-particles-assetmanager": "~0.2.0",
+    "grunt-particles": "~0.2.0"
   }
 }
